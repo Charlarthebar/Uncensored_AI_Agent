@@ -2,7 +2,7 @@
 
 A ChatGPT-style chat interface powered by **[dolphin-mistral](https://huggingface.co/cognitivecomputations/dolphin-2.1-mistral-7b)** — a community fine-tune of Mistral 7B by Eric Hartford with all safety filters removed. The model runs entirely self-hosted via [Ollama](https://ollama.com); no data leaves your infrastructure.
 
-**Live demo:** http://134-122-20-209.sslip.io
+**Live demo:** http://uncensored-ai-agent.duckdns.org
 
 ---
 
