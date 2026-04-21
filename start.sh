@@ -8,15 +8,13 @@ PORT="${PORT:-8000}"
 if ! pgrep -x ollama &>/dev/null; then
   echo "Starting Ollama server..."
   ollama serve &>/tmp/ollama.log &
-  OLLAMA_PID=$!
-  # Wait for Ollama to be ready
   for i in $(seq 1 20); do
     if curl -s http://localhost:11434/api/tags &>/dev/null; then
       break
     fi
     sleep 0.5
   done
-  echo "✓ Ollama running (PID $OLLAMA_PID)"
+  echo "✓ Ollama running"
 else
   echo "✓ Ollama already running"
 fi
